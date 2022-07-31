@@ -1,4 +1,4 @@
-NAME        scripthost.exe
+NAME                       server.dll
 
 EXPORTS
     DllGetClassObject      PRIVATE
