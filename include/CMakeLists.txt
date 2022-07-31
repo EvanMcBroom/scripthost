@@ -1,2 +1,2 @@
-target_include_directories(scripthost PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_sources(scripthost PRIVATE comfactory.hpp comserver.hpp scriptsite.hpp)
+target_include_directories(scriptingsite PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_sources(scriptingsite PUBLIC comfactory.hpp comserver.hpp scriptsite.hpp)

@@ -32,7 +32,7 @@ Scripthost will link against the static version of the runtime library which all
 
 ## Running
 
-Scripthost is simple to use only and requires the name of an engine and one or more files to run.
+Scripthost is simple to use and only requires the name of an engine and one or more files to run.
 
 ```
 scripthost.exe <engine name> <script path>...
@@ -44,6 +44,14 @@ Below is an example of running a VBScript file.
 echo MsgBox "Hello World!" > example.vbs
 scripthost.exe vbscript example.vbs
 ```
+
+## COM Server
+
+A COM object for an ActiveX scripting site is required to interact with an ActiveX scripting engine.
+Scripthost has an embedded scripting site implementation to allow you to run the utility without registering a new COM server.
+
+That implementation is also built into a separate COM server for convenience during development.
+Although it may be registered using `regsvr32.exe` like normal, the server's registration is not required to run scripthost and may be safely ignored.
 
 ## References
 
