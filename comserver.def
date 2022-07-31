@@ -1,8 +1,4 @@
 NAME        scripthost.exe
-DESCRIPTION 'Generic Active Scripting Site'
-
-SECTIONS	
-	.sdata READ WRITE SHARED
 
 EXPORTS
     DllGetClassObject      PRIVATE

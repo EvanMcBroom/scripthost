@@ -70,10 +70,7 @@ HRESULT RunScript(IActiveScript* engine, wchar_t* scriptPath) {
     return result;
 }
 
-//int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow) {
 int wmain(int argc, wchar_t* argv[]) {
-    //int argc;
-    //auto argv{ CommandLineToArgvW(pCmdLine, &argc) };
     if (argc > 2) {
         if (SUCCEEDED(CoInitialize(nullptr))) {
             IActiveScript* engine;

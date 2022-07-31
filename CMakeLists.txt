@@ -13,4 +13,6 @@ set_target_properties(scripthost PROPERTIES
     CXX_STANDARD_REQUIRED YES
 )
 target_sources(scripthost PRIVATE comfactory.cpp comserver.cpp comserver.def main.cpp scriptsite.cpp)
+# Manually add def file to link options because CMake ignores def files for executables
+target_link_options(scripthost PRIVATE "/DEF:${CMAKE_CURRENT_SOURCE_DIR}/comserver.def")
 add_subdirectory(include)

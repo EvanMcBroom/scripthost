@@ -8,5 +8,5 @@ DEFINE_GUID(CLSID_GenericScriptSite, 0x98d2b558, 0xbc82, 0x4b80, 0x92, 0x13, 0x8
 
 STDAPI DllGetClassObject(IN REFCLSID rclsid, IN REFIID riid, OUT LPVOID* ppv);
 STDAPI DllCanUnloadNow();
-STDAPI DllRegisterServer(void);
-STDAPI DllUnregisterServer(void);
+STDAPI DllRegisterServer();
+STDAPI DllUnregisterServer();
